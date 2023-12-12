@@ -41,7 +41,25 @@
   line-height: 18px;
   text-transform: lowercase;
   border: transparent;
+  cursor: pointer;
   background-color: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__title {
@@ -50,6 +68,10 @@
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__description {
+  margin-block: 55px;
 }
 
 .title-decor {
