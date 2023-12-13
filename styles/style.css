@@ -176,3 +176,14 @@
 .footer .header__title {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
+
+@media (width >= 768px) {
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .content {
+    grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr; /*3.25 - это 768/236*/
+  }
+  
+}
