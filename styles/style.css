@@ -137,6 +137,7 @@
 
 .content {
   display: grid;
+  gap: 10px;
   align-items: start;
   padding: 10px;
   min-block-size: 100vh;
@@ -149,9 +150,29 @@
 }
 
 .content__title {
-  margin-block-start: 20px;
+  margin-block-start: 10px;
 }
 
-.content__text {
-  margin-block-start: 10px;
+.gallery__title {
+  margin-block-start: 0;
+}
+
+.content__image {
+  margin-block-start: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.footer {
+  display: grid;
+  margin-block-start: 30px;
+  min-block-size: 100vh;
+  place-items: center;
+}
+
+.footer .header__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
