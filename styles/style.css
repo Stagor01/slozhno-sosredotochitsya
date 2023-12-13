@@ -2,7 +2,7 @@
 
 .page {
   color: var(--main-text-color);
-  font-family: var(--accent-font-family, "IBM Plex mono", monospace);
+  font-family: var(--accent-font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -24,6 +24,52 @@
   position: relative;
 }
 
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+}
+
+.decorated-zone::after {
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+.rec-decor-el {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  inset-inline-end: 20px;
+  inset-block-start: 10px;
+}
+
+.rec-decor-el::before {
+  content: "REC";
+  color: var(--accent-color);
+  line-height: 25px;
+}
+
+.rec-decor-el::after {
+  content: "";
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background: var(--accent-color);
+  inline-size: 9px;
+  block-size: 9px;
+}
+
 .header__theme-menu {
   justify-self: end;
   color: var(--accent-color);
@@ -38,7 +84,6 @@
 
 .header__theme-menu-button {
   padding: 0 12px;
-  line-height: 18px;
   text-transform: lowercase;
   border: transparent;
   cursor: pointer;
@@ -76,7 +121,37 @@
 
 .title-decor {
   color: var(--title-decor-color);
+  font-size: inherit;
   font-weight: 700;
   line-height: 23.4px;
   background-color: var(--accent-color);
+}
+
+.title-decor-400 {
+  font-weight: 400;
+}
+
+.main {
+  display: grid;
+}
+
+.content {
+  display: grid;
+  align-items: start;
+  padding: 10px;
+  min-block-size: 100vh;
+  margin-block-start: 30px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-size: inherit;
+}
+
+.content__title {
+  margin-block-start: 20px;
+}
+
+.content__text {
+  margin-block-start: 10px;
 }
