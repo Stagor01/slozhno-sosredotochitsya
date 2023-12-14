@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
+  background-color: #000028;
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
@@ -127,21 +128,21 @@
   background-color: var(--accent-color);
 }
 
-.title-decor-400 {
+.content__title-sovet {
   font-weight: 400;
 }
 
 .main {
   display: grid;
+  gap: 50px;
+  padding: 40px 10px;
 }
 
 .content {
   display: grid;
-  gap: 10px;
+  gap: 20px;
   align-items: start;
-  padding: 10px;
   min-block-size: 100vh;
-  margin-block-start: 30px;
 }
 
 .section__title {
@@ -149,16 +150,25 @@
   font-size: inherit;
 }
 
-.content__title {
-  margin-block-start: 10px;
+.content__container-list {
+  display: grid;
+  gap: 20px;
 }
 
-.gallery__title {
-  margin-block-start: 0;
+.content__container-list-article {
+  display: grid;
+  gap: 10px;
+}
+
+.content__title-sovet {
+  margin-block-end: 10px;
+}
+
+.content__text:not(:last-child) {
+  margin-block-end: 10px;
 }
 
 .content__image {
-  margin-block-start: 0;
   display: block;
   object-fit: cover;
   object-position: center;
@@ -168,7 +178,6 @@
 
 .footer {
   display: grid;
-  margin-block-start: 30px;
   min-block-size: 100vh;
   place-items: center;
 }
@@ -185,5 +194,9 @@
   .content {
     grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr; /*3.25 - это 768/236*/
   }
-  
+
+  .content__container {
+    grid-column-start: 2 3;
+  }
+
 }
