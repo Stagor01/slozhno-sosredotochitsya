@@ -7,7 +7,7 @@
 .page.theme_light {
   --accent-color: #ff8dcb;
   --border-color: #353430;
-  --border-hover-color: rgba(50, 49, 45, 0.40);;
+  --border-hover-color: rgba(50, 49, 45, 0.40);
   --theme-menu-color: #353430;
   --header__title-color: #ffc2e6;
   --section__title-color: #353430;
@@ -24,7 +24,7 @@
   :root {
     --accent-color: #ff8dcb;
     --border-color: #353430;
-    --border-hover-color: rgba(50, 49, 45, 0.40);;
+    --border-hover-color: rgba(50, 49, 45, 0.40);
     --theme-menu-color: #353430;
     --header__title-color: #ffc2e6;
     --section__title-color: #353430;
