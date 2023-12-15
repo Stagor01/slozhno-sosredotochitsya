@@ -168,7 +168,21 @@
 }
 
 .link {
-  /*Реализовать для ховера и фокуса стили ссылки*/
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: 1px solid currentColor;
 }
 
 .content__image {
