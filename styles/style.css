@@ -1,5 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   color: var(--main-text-color);
   font-family: var(--accent-font-family);
@@ -7,7 +6,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
-  background-color: #000028;
+  background-color: var(--background-color);
 }
 
 .header {
@@ -35,15 +34,15 @@
 }
 
 .decorated-zone::before {
-  border-right: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .decorated-zone::after {
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
@@ -51,6 +50,7 @@
 .rec-decor-el {
   position: absolute;
   display: inline-flex;
+  visibility: var(--rec-decor-el-visibility);
   align-items: center;
   gap: 10px;
   inset-inline-end: 20px;
@@ -74,7 +74,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  color: var(--accent-color);
+  color: var(--theme-menu-color);
   margin-block: 65px;
 }
 
@@ -86,6 +86,7 @@
 
 .header__theme-menu-button {
   padding: 0 12px;
+  color: var(--theme-menu-color);
   text-transform: lowercase;
   border: transparent;
   cursor: pointer;
@@ -93,7 +94,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--theme-menu-color);
   pointer-events: none;
 }
 
@@ -106,7 +107,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--theme-menu-color);
 }
 
 .header__title {
