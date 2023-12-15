@@ -1,0 +1,1 @@
+https://github.com/Stagor01/slozhno-sosredotochitsya.git
