@@ -7,8 +7,10 @@
 .page.theme_dark {
   --accent-color: #ff0070;
   --border-color: #ff0070;
+  --border-hover-color: rgba(255, 0, 112, 0.40);
   --theme-menu-color: #ff0070;
   --header__title-color: #DB00FF;
+  --section__title-color: #ff0070;
   --title-decor-color: #000028;
   --header__title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --accent-font-family: IBM Plex Mono, monoscape;
@@ -22,8 +24,10 @@
   :root {
     --accent-color: #ff0070;
     --border-color: #ff0070;
+    --border-hover-color: rgba(255, 0, 112, 0.40);
     --theme-menu-color: #ff0070;
     --header__title-color: #DB00FF;
+    --section__title-color: #ff0070;
     --title-decor-color: #000028;
     --header__title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --accent-font-family: IBM Plex Mono, monoscape;
