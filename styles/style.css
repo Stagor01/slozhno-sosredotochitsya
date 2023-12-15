@@ -7,6 +7,7 @@
   font-weight: 400;
   line-height: 23.4px;
   background-color: var(--background-color);
+  background-attachment: fixed;
 }
 
 .header {
@@ -18,7 +19,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .decorated-zone {
