@@ -12,8 +12,6 @@
   --header__title-color: #ffc2e6;
   --section__title-color: #353430;
   --title-decor-color: #353430;
-  --header__title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --accent-font-family: IBM Plex Mono, monoscape;
   --main-text-color: #353430;
   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
@@ -29,8 +27,6 @@
     --header__title-color: #ffc2e6;
     --section__title-color: #353430;
     --title-decor-color: #353430;
-    --header__title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --accent-font-family: IBM Plex Mono, monoscape;
     --main-text-color: #353430;
     --background-color: #fff1f7;
     --background-image: url(../images/cover-image-light.png);

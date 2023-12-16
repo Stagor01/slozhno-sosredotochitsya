@@ -12,9 +12,16 @@
   --section__title-color: #ff0070;
   --title-decor-color: #000028;
   --header__title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --field-size: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   --accent-font-family: IBM Plex Mono, monoscape;
   --main-text-color: #f1b2ce;
   --background-color: #000028;
   --background-image: url(../images/cover-image.png);
   --rec-decor-el-visibility: visible;
+}
+
+@media (width >= 768px) {
+  :root {
+  --header__title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
