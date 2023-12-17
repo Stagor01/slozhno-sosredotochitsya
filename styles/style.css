@@ -118,6 +118,10 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
+.header__description {
+  font-weight: 700;
+}
+
 .title-decor {
   color: var(--title-decor-color);
   background-color: var(--accent-color);
